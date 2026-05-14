@@ -1,0 +1,147 @@
+\documentclass[11pt]{article}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\pagestyle{fancy}
+\fancyhead[L]{AP Calculus BC}
+\fancyhead[R]{1.2 Functions and Graphs}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+The values of one variable often depend on the other. We call this a function. We define a function as a rule that assigns a \underline{\hspace{2cm}} element from each member of the range ($R$) to each element in a domain ($D$). Counter-examples:
+
+\vspace{1.5cm}
+
+\noindent Since the purpose of mathematics is to model the world, a function is pretty important. We write a function as:
+
+\vspace{1.5cm}
+
+\noindent What is the function that expresses the area of a circle?
+
+\vspace{1.5cm}
+
+\noindent Domain is the \underline{\hspace{2cm}}. Range is the \underline{\hspace{2cm}}. What are the domain and range for the circle function?
+
+\vspace{1.5cm}
+
+\noindent What is the inverval notation? Show $-3 < x \le 6$ with interval notation (and any other way you can think of). What about for the circle above?
+
+\noindent Identify the domain and range of the following graphs. Use interval notation.
+
+\vspace{0.5cm}
+
+\begin{align*}
+    y=\frac{1}{x} && y=\sqrt{x}
+\end{align*}
+
+\vspace{0.5cm}
+
+\begin{align*}
+    y=\sqrt{4-x^2} && y=x^\frac{2}{3}
+\end{align*}
+
+\newpage
+
+\noindent What is the definition of an even function? An odd function?
+
+\vspace{1.5cm}
+
+\noindent How do we know if a function is even or odd by graphing it?
+
+\vspace{1.5cm}
+
+\noindent Determine if the following functions are odd, even, or neither.
+
+\begin{align*}
+    f(x) = x^2 && f(x) = x^2 + 1 && f(x) = x && f(x) = x + 1
+\end{align*}
+
+\vspace{1.5cm}
+
+\noindent How do we graph a piecewise function? Graph and find the domain and range:
+
+\vspace{0.5cm}
+
+\noindent
+\begin{minipage}[c]{0.5\textwidth}
+\[f(x) =
+\begin{cases}
+    -x, & x < 0 \\
+    x^2, & 0 \le x \le 1 \\
+    1, & x > 1
+\end{cases}
+\]
+
+\vspace{1cm}
+\noindent Domain: \underline{\hspace{4cm}}
+
+\vspace{0.8cm}
+\noindent Range: \underline{\hspace{4cm}}
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines = middle,
+        xlabel = $x$,
+        ylabel = $y$,
+        xmin = -3, xmax = 3,
+        ymin = -1, ymax = 4,
+        xtick={-2,-1,1,2},
+        ytick={1,2,3},
+        grid = both,
+        grid style={line width=.1pt, draw=gray!10},
+        major grid style={line width=.2pt,draw=gray!50},
+        width=6cm,
+        height=6cm,
+        tick label style={font=\tiny}
+    ]
+    \end{axis}
+\end{tikzpicture}
+\end{minipage}
+
+\newpage
+
+\noindent Graph the following: $f(x) = | x - 2 | + 3$. Then write it as a piecewise function. Also find the domain and range.
+
+\vspace{0.5cm}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = middle,
+            xlabel = $x$,
+            ylabel = $y$,
+            xmin = -1, xmax = 6,
+            ymin = -1, ymax = 7,
+            xtick={-1,0,1,2,3,4,5},
+            ytick={1,2,3,4,5,6},
+            grid = both,
+            grid style={line width=.1pt, draw=gray!10},
+            major grid style={line width=.2pt,draw=gray!50},
+            width=6.5cm,
+            height=6.5cm,
+            tick label style={font=\tiny}
+        ]
+        \end{axis}
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent Finally, what is a composite function? If $f(x) = x - 7$ and $g(x) = x^2$, what is $f(g(x))$? What is $(f \circ g)(x)$? What is $g(f(2))$?
+
+\vspace{1.5cm}
+
+\noindent Composite functions are used a lot in Calculus.
+
+\vspace{1.5cm}
+
+\end{document}c
