@@ -1,19 +1,10 @@
 \documentclass[11pt]{article}
-
-\usepackage{fancyhdr}
-\usepackage{amsmath}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-
-\pagestyle{fancy}
-\fancyhead[L]{AP Calculus BC}
+\input{../calcnotes.sty}
 \fancyhead[R]{2.1 Rates of Change and Limits}
-\fancyfoot[C]{\thepage}
 
 \begin{document}
 
-Today, we start working on Calculus-like "things." The first of which is a limit. Limits will come up repeatedly all year! They are difficult to understand (sometimes), but not difficult to work with.
+Today, we start working on Calculus-like things. The first of which is a limit. Limits will come up repeatedly all year! They are difficult to understand (sometimes), but not difficult to work with.
 
 \vspace{1.5cm}
 
@@ -25,7 +16,7 @@ Today, we start working on Calculus-like "things." The first of which is a limit
 
 \vspace{1.5cm}
 
-\noindent Now for the Calculus part, how do we find the \emph{instantaneous speed} -- that is, the speed at any \emph{instant}? Look at the average speed formula:
+\noindent Now for the Calculus part, how do we find the \emph{instantaneous speed}---that is, the speed at any \emph{instant}? Look at the average speed formula:
 
 \vspace{1.5cm}
 
@@ -33,7 +24,7 @@ Today, we start working on Calculus-like "things." The first of which is a limit
 
 \vspace{1.5cm}
 
-\noindent Use the example \emph{from} above to find the instantaneous velocity at $t = 2$ seconds.
+\noindent Use the example above to find the instantaneous velocity at $t = 2$ seconds.
 
 \vspace{1.5cm}
 
@@ -53,10 +44,10 @@ $0 < |x - c| < \delta \Rightarrow |f(x) - L| < \varepsilon$, we write $\lim_{x\t
 \vspace{0.5cm}
 
 \noindent Examples help here\dots\\
-Graph $f(x) = \frac{x^2 - 1}{x - 1}$, 
+Graph $f(x) = \frac{x^2 - 1}{x - 1}$,
 $g(x) = \begin{cases}
     \frac{x^2 - 1}{x - 1}, & x \neq 1 \\[1ex]
-    1, & x = 1 
+    1, & x = 1
 \end{cases}$, $h(x) = x + 1$
 
 \vspace{0.5cm}
@@ -121,22 +112,22 @@ $g(x) = \begin{cases}
 \end{minipage}
 \end{center}
 
-\noindent Find the limit for each function as x approaches 1.
+\noindent Find the limit for each function as $x$ approaches 1.
 
 \vspace{1.5cm}
 
-We define some properties of limits wit $L$, $M$, $c$, and $k$ as real numbers and $\lim_{x\to c} f(x) = L$ and $\lim_{x\to c} g(x) = M$
+We define some properties of limits with $L$, $M$, $c$, and $k$ as real numbers and $\lim_{x\to c} f(x) = L$ and $\lim_{x\to c} g(x) = M$:
 \begin{itemize}
-    \item Sum Rule: $\lim_{x\to c}(f(x) + g(x)) = L + M$s
-    \item Difference Rule: $\lim_{x\to c}(f(x) - g(x)) = L + M$
-    \item Product Rule:$\lim_{x\to c}(f(x) \times g(x)) = L \times M$
-    \item Constant Multiple Rule: $\lim_{x\to0}(k \times f(x)) = k \times L$
-    \item Quotient Rule:  $\lim_{x\to0} (\frac{f(x)}{g(x)}) = \frac{L}{M}, M \neq 0$
+    \item Sum Rule: $\lim_{x\to c}(f(x) + g(x)) = L + M$
+    \item Difference Rule: $\lim_{x\to c}(f(x) - g(x)) = L - M$
+    \item Product Rule: $\lim_{x\to c}(f(x) \cdot g(x)) = L \cdot M$
+    \item Constant Multiple Rule: $\lim_{x\to c}(k \cdot f(x)) = k \cdot L$
+    \item Quotient Rule: $\lim_{x\to c}\frac{f(x)}{g(x)} = \frac{L}{M},\ M \neq 0$
 \end{itemize}
 
 \newpage
 
-Most of these are common sense, but they pop up often. Find the limits:
+\noindent Most of these are common sense, but they pop up often. Find the limits:
 
 \begin{align*}
     \lim_{x\to3}[x^2(2-x)] && \lim_{x\to0}\frac{\tan x}{x} && \lim_{x\to1}\frac{x^2 - 3x + 2}{x^2 - 1}
@@ -144,18 +135,18 @@ Most of these are common sense, but they pop up often. Find the limits:
 
 \vspace{1.5cm}
 
-It is important to remember that you can only find a limit if it approaches the same thing from \emph{both} sides. See if you can find: $\lim_{x\to2}\frac{x^3 - 1}{x - 2}$
+\noindent It is important to remember that you can only find a limit if it approaches the same thing from \emph{both} sides. See if you can find: $\lim_{x\to2}\frac{x^3 - 1}{x - 2}$
 
 \vspace{1.5cm}
 
-This bugs some people, so we say, "Fine, we can also find it from just one side:"
+\noindent This bugs some people, so we say, ``Fine, we can also find it from just one side:''
 
 \begin{align*}
-    \lim_{x\to 0^-} = && lim{x\to 0^+} =\\
+    \lim_{x\to 0^-} = && \lim_{x\to 0^+} =\\
     &\lim_{x\to 0} =
 \end{align*}
 
-To illustrate, look at this diagram:
+\noindent To illustrate, look at this diagram:
 
 \noindent
 \begin{minipage}{0.45\textwidth}
@@ -182,17 +173,17 @@ To illustrate, look at this diagram:
         \addplot[domain=0:1, samples=2, thick, blue] {-x + 1};
         \fill[blue] (axis cs:0,1) circle (2pt);
         \draw[blue, fill=white] (axis cs:1,0) circle (2pt);
-    
+
         \addplot[domain=1:2, samples=2, thick, blue] {1};
         \fill[blue] (axis cs:1,1) circle (2pt);
         \draw[blue, fill=white] (axis cs:2,1) circle (2pt);
-    
+
         \fill[blue] (axis cs:2,2) circle (2pt);
-    
+
         \addplot[domain=2:3, samples=2, thick, blue] {x - 1};
         \draw[blue, fill=white] (axis cs:2,1) circle (2pt);
         \fill[blue] (axis cs:3,2) circle (2pt);
-    
+
         \addplot[domain=3:4, samples=2, thick, blue] {-x + 5};
         \draw[blue, fill=white] (axis cs:3,2) circle (2pt);
         \draw[blue, fill=white] (axis cs:4,1) circle (2pt);
@@ -202,7 +193,7 @@ To illustrate, look at this diagram:
 
 \vspace{0.5cm}
 
-Finally, something called the (seriously) Sandwich theorem. Don't worry too much about this one (there will be more later).\\
-Show that $\lim_{x\to0}[x^2\sin(\frac{1}{x})]=0$
+\noindent Finally, something called the (seriously) Sandwich Theorem. Don't worry too much about this one (there will be more later).\\
+Show that $\lim_{x\to0}\left[x^2\sin\!\left(\frac{1}{x}\right)\right]=0$.
 
 \end{document}
