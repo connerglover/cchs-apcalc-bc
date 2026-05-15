@@ -1,15 +1,6 @@
 \documentclass[11pt]{article}
-
-\usepackage{fancyhdr}
-\usepackage{amsmath}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-
-\pagestyle{fancy}
-\fancyhead[L]{AP Calculus BC}
+\input{../calcnotes.sty}
 \fancyhead[R]{1.3 Exponential Functions}
-\fancyfoot[C]{\thepage}
 
 \begin{document}
 
@@ -23,7 +14,7 @@
 
 \noindent Graph $y=2(3^x)-4$ and state the domain and range.
 
-\begin{flushleft}
+\begin{center}
 \begin{tikzpicture}
 \begin{axis}[
     axis lines = middle,
@@ -41,7 +32,7 @@
 ]
 \end{axis}
 \end{tikzpicture}
-\end{flushleft}
+\end{center}
 
 \noindent Find the zero of $f(x)=5-2.5^x$ algebraically and graphically with a calculator.
 
@@ -60,14 +51,17 @@
 
 \vspace{0.5cm}
 
+\begin{center}
 \begin{tabular}{|c|c|}
     \hline
-    \multicolumn{2}{|c|}{\textbf{U.S. Population}} \\ \hline        \textbf{Year} & \textbf{Population (millions)} \\ \hline
+    \multicolumn{2}{|c|}{\textbf{U.S. Population}} \\ \hline
+    \textbf{Year} & \textbf{Population (millions)} \\ \hline
     2002 & 287.9 \\ \hline
     2003 & 290.4 \\ \hline
     2004 & 293.2 \\ \hline
     2005 & 295.5 \\ \hline
 \end{tabular}
+\end{center}
 
 \vspace{0.5cm}
 
@@ -75,7 +69,7 @@
 
 \newpage
 
-\noindent What other ways can we model exponential growth / decay? What is a half-life?
+\noindent What other ways can we model exponential growth and decay? What is a half-life?
 
 \vspace{1.5cm}
 
@@ -83,6 +77,6 @@
 
 \vspace{1.5cm}
 
-\noindent What is that number $e$? How can we approximate it with: $f(x)=(1+\frac{1}{x})^x$
+\noindent What is that number $e$? How can we approximate it with: $f(x)=\left(1+\frac{1}{x}\right)^x$
 
 \end{document}
