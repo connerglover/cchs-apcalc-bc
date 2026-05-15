@@ -1,55 +1,6 @@
 \documentclass[11pt]{article}
-
-\usepackage{fancyhdr}
-\usepackage{amsmath}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-
-\pagestyle{fancy}
-\fancyhead[L]{AP Calculus BC}
-\fancyhead[R]{1.6 Tirgnometric functions}
-\fancyfoot[C]{\thepage}
-
-\newcommand{\emptygraph}{
-    \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[
-            axis lines = middle,
-            grid = both,
-            width=8cm,
-            height=7cm,
-            xmin=-5, xmax=5,
-            ymin=-5, ymax=5,
-            xtick={-4,-3,...,4},
-            ytick={-4,-3,...,4},
-            xlabel={$x$},
-            ylabel={$y$},
-            tick label style={font=\tiny},
-            grid style={dashed, gray!30}
-        ]
-        \end{axis}
-    \end{tikzpicture}
-    \end{center}
-}
-
-\newcommand{\smallgraph}{
-    \begin{tikzpicture}
-        \begin{axis}[
-            axis lines = middle,
-            grid = both,
-            width=5cm,
-            height=4.5cm,
-            xmin=-5, xmax=5,
-            ymin=-5, ymax=5,
-            xtick={-4,-2,0,2,4},
-            ytick={-4,-2,0,2,4},
-            tick label style={font=\tiny},
-            grid style={dashed, gray!30}
-        ]
-        \end{axis}
-    \end{tikzpicture}
-}
+\input{../calcnotes.sty}
+\fancyhead[R]{1.6 Trigonometric Functions}
 
 \begin{document}
 
@@ -57,7 +8,7 @@
 
 \vspace{1.5cm}
 
-\noindent Find the length of an arc subtended (?!?!?!?!) on a circle of radius $3$ by a central angle of measure $\frac{2\pi}{3}$
+\noindent Find the length of an arc subtended on a circle of radius $3$ by a central angle of measure $\frac{2\pi}{3}$.
 
 \vspace{1.5cm}
 
@@ -109,7 +60,7 @@
 $\cos \longrightarrow \underline{\hspace{1.5cm}}$ \hspace{4cm} $\sin \longrightarrow \underline{\hspace{1.5cm}}$
 \end{center}
 
-\noindent Write an angle $\theta$ in standard position ona  circle of radius $r$ and find the six basic trig functions at that point.
+\noindent Write an angle $\theta$ in standard position on a circle of radius $r$ and find the six basic trig functions at that point.
 
 \newpage
 
@@ -154,12 +105,12 @@ $\cos \longrightarrow \underline{\hspace{1.5cm}}$ \hspace{4cm} $\sin \longrighta
 \noindent Here are some problems to try:
 
 \begin{enumerate}
-    \item Find all of the trig values of $\theta$ if $\sin \theta = \frac{-3}{5}$ and $\tan \theta < 0$
-    
+    \item Find all of the trig values of $\theta$ if $\sin \theta = \frac{-3}{5}$ and $\tan \theta < 0$.
+
     \newpage
 
-    \item Graph $y = 3\cos (2(x-\frac{\pi}{2})) + 1$. Label the period, amplitude, domain, range, and shifts.
-    
+    \item Graph $y = 3\cos\!\left(2\left(x-\frac{\pi}{2}\right)\right) + 1$. Label the period, amplitude, domain, range, and shifts.
+
     \emptygraph
 \end{enumerate}
 
@@ -167,11 +118,11 @@ $\cos \longrightarrow \underline{\hspace{1.5cm}}$ \hspace{4cm} $\sin \longrighta
 
 \vspace{1.5cm}
 
-\noindent Can we use any spot on the unit circle? Why? Why not? Is there a difference between that question and solving $\cos (x) = -0.5$?
+\noindent Can we use any spot on the unit circle? Why or why not? Is there a difference between that question and solving $\cos(x) = -0.5$?
 
 \vspace{1.5cm}
 
-\noindent What are the domain and ranges for the inverse trig functions?
+\noindent What are the domain and range for the inverse trig functions?
 
 \vspace{1.5cm}
 
