@@ -1,114 +1,118 @@
-\documentclass[11pt]{exam}
+\documentclass[11pt]{article}
 \input{../calcpractices.sty}
+
 \fancyhead[C]{2.1 Rates of Change and Limits}
 
 \begin{document}
 
-\begin{questions}
+\noindent An object dropped from rest from the top of a tall building $\displaystyle y = 16t^2$ feet in the first $\displaystyle t$ seconds.
 
-\noindent An object dropped from rest from the top of a tall building $y = 16t^2$ feet in the first $t$ seconds.\\
+\begin{enumerate}
 
-\item Find the average speed during the first 4 seconds of fall.\\[1.5cm]
-\item Find the instantaneous speed of the object at $t = 4$ seconds and confirm your answer algebraically.\\[1.5cm]
+\item Find the average speed during the first 4 seconds of fall.\\[2ex]
+\item Find the instantaneous speed of the object at $\displaystyle t = 4$ seconds and confirm your answer algebraically.\\[2ex]
 
 \begin{multicols}{2}
-\item Find $\lim_{x\to c} (2x^3-3x^2+x-1)$
-\item Find $\lim_{x\to c} \frac{x^4 - x^3 - 1}{x^2 + 9}$
+    \item Find $\displaystyle \lim_{x\to c} (2x^3-3x^2+x-1)$\\[2ex]
+    \item Find $\displaystyle \lim_{x\to c} \frac{x^4 - x^3 - 1}{x^2 + 9}$\\[2ex]
 \end{multicols}
 
-\vspace{1.5cm}
+
+\vspace{2ex}
 
 \noindent Determine the limit by substitution. Confirm your answer with a graph.
 
 \begin{multicols}{2}
-    \item $\lim_{x\to-4}(x+3)^{1998}$\\[3pt]\smallgraph
-    \item $\lim_{x\to2} \frac{y^2 + 5y + 6}{y +2}$\\[3pt]\smallgraph
+    \item $\displaystyle \lim_{x\to-4}(x+3)^{1998}$\\[1ex]\smallgraph
+    \item $\displaystyle \lim_{x\to2} \frac{x^2 + 5x + 6}{x + 2}$\\[1ex]\smallgraph
 \end{multicols}
 
-\vspace{1.5cm}
+
+\vspace{2ex}
 
 \begin{multicols}{2}
-    \item $\lim_{x \to \frac{1}{2}}(\int x)$\\[3pt]\smallgraph
-    \item $\lim_{x\to2} \sqrt{x + 3}$\\[3pt]\smallgraph
+    \item $\displaystyle \lim_{x \to \frac{1}{2}}\lfloor x \rfloor$\\[1ex]\smallgraph
+    \item $\displaystyle \lim_{x\to2} \sqrt{x + 3}$\\[1ex]\smallgraph
 \end{multicols}
 
 \newpage
 
-\noindent Create a table (shown for \#9) for each problem to find three negative values and three positive values that get repeatedly closer to 0. Use the table to determine what you think $\lim_{x\to0}f(x)$ is.
+\noindent Create a table (shown for \#9) for each problem to find three negative values and three positive values that get repeatedly closer to 0. Use the table to determine what you think $\displaystyle \lim_{x\to0}f(x)$ is.
 
 \begin{multicols}{3}
-    \item $f(x)=\frac{x^2-x}{x}$\\[0.3cm]
+    \item $\displaystyle f(x)=\frac{x^2-x}{x}$\\[1ex]
     {\renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{|c|p{1.8cm}|}
-        \hline
-        $x$ & \hfil $f(x)$ \\ \hline
-        $0.1$ &  \\ \hline
-        $0.01$ &  \\ \hline
-        $0.001$ &  \\ \hline
-        $-0.001$ &  \\ \hline
-        $-0.01$ &  \\ \hline
-        $-0.1$ &  \\ \hline
-    \end{tabular}}
-    
-    \item $f(x) = \sin{\frac{1}{x}}$\\[0.3cm]
+        \begin{tabular}{|c|p{1.8cm}|}
+            \hline
+            $\displaystyle x$      & \hfil $\displaystyle f(x)$ \\ \hline
+            $\displaystyle 0.1$    &                            \\ \hline
+            $\displaystyle 0.01$   &                            \\ \hline
+            $\displaystyle 0.001$  &                            \\ \hline
+            $\displaystyle -0.001$ &                            \\ \hline
+            $\displaystyle -0.01$  &                            \\ \hline
+            $\displaystyle -0.1$   &                            \\ \hline
+        \end{tabular}}
+
+    \item $\displaystyle f(x) = \sin{\frac{1}{x}}$\\[0.3cm]
     {\renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{|c|p{1.8cm}|}
-        \hline
-        $x$ & \hfil $f(x)$ \\ \hline
-        $0.1$ &  \\ \hline
-        $0.01$ &  \\ \hline
-        $0.001$ &  \\ \hline
-        $-0.001$ &  \\ \hline
-        $-0.01$ &  \\ \hline
-        $-0.1$ &  \\ \hline
-    \end{tabular}}
-    
-    \item $f(x) = x \sin{x} (\ln{|x|})$\\[0.3cm]
+        \begin{tabular}{|c|p{1.8cm}|}
+            \hline
+            $\displaystyle x$      & \hfil $\displaystyle f(x)$ \\ \hline
+            $\displaystyle 0.1$    &                            \\ \hline
+            $\displaystyle 0.01$   &                            \\ \hline
+            $\displaystyle 0.001$  &                            \\ \hline
+            $\displaystyle -0.001$ &                            \\ \hline
+            $\displaystyle -0.01$  &                            \\ \hline
+            $\displaystyle -0.1$   &                            \\ \hline
+        \end{tabular}}
+
+    \item $\displaystyle f(x) = x \sin{x} (\ln{|x|})$\\[0.3cm]
     {\renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{|c|p{1.8cm}|}
-        \hline
-        $x$ & \hfil $f(x)$ \\ \hline
-        $0.1$ &  \\ \hline
-        $0.01$ &  \\ \hline
-        $0.001$ &  \\ \hline
-        $-0.001$ &  \\ \hline
-        $-0.01$ &  \\ \hline
-        $-0.1$ &  \\ \hline
-    \end{tabular}}
+        \begin{tabular}{|c|p{1.8cm}|}
+            \hline
+            $\displaystyle x$      & \hfil $\displaystyle f(x)$ \\ \hline
+            $\displaystyle 0.1$    &                            \\ \hline
+            $\displaystyle 0.01$   &                            \\ \hline
+            $\displaystyle 0.001$  &                            \\ \hline
+            $\displaystyle -0.001$ &                            \\ \hline
+            $\displaystyle -0.01$  &                            \\ \hline
+            $\displaystyle -0.1$   &                            \\ \hline
+        \end{tabular}}
 \end{multicols}
 
-\vspace{1.5cm}
+\vspace{2ex}
 
 \noindent Explain why you cannot use substitution to determine the limit. Find the limit if it exists.
 
 \begin{multicols}{2}
-    \item $\lim_{x\to 0} \frac{1}{x^2}$
-    \item $\lim_{x\to 0} \frac{(4+x)^2 - 16}{x}$
+    \item $\displaystyle \lim_{x\to 0} \frac{1}{x^2}$\\[2ex]
+    \item $\displaystyle \lim_{x\to 0} \frac{(4+x)^2 - 16}{x}$\\[2ex]
 \end{multicols}
 
-\vspace{1.5cm}
+\vspace{2ex}
 
 \noindent Determine the limit graphically. Confirm algebraically.
 
 \begin{multicols}{2}
-    \item $\lim_{t\to 2} \frac{t^2 - 3t + 2}{t^2 - 4}$\\[3pt] \smallgraph
-    \item $\lim_{x\to 0} \frac{\frac{1}{2+x} - \frac{1}{2}}{x}$\\[3pt] \smallgraph
-    
+    \item $\displaystyle \lim_{t\to 2} \frac{t^2 - 3t + 2}{t^2 - 4}$\\[1ex]\smallgraph
+    \item $\displaystyle \lim_{x\to 0} \frac{\frac{1}{2+x} - \frac{1}{2}}{x}$\\[1ex]\smallgraph
 \end{multicols}
 
-\newpage
+\vspace{2ex}
 
 \begin{multicols}{2}
-    \item $\lim_{x\to 0} \frac{\sin{2x}}{x}$\\[3pt] \smallgraph
-    \item $\lim_{x\to 0} \frac{\sin{x}}{2x^2 - x}$\\[3pt] \smallgraph
+    \item $\displaystyle \lim_{x\to 0} \frac{\sin{2x}}{x}$\\[1ex]\smallgraph
+    \item $\displaystyle \lim_{x\to 0} \frac{\sin{x}}{2x^2 - x}$\\[1ex]\smallgraph
 \end{multicols}
 
-\vspace{1.5cm}
+
+\vspace{2ex}
 
 \begin{multicols}{2}
-    \item $\lim_{x\to 0} \frac{x + \sin{x}}{x}$\\[3pt] \smallgraph
-    \item $\lim_{x\to 5} \frac{x^3 - 125}{x - 5}$\\[3pt] \smallgraph
+    \item $\displaystyle \lim_{x\to 0} \frac{x + \sin{x}}{x}$\\[1ex]\smallgraph
+    \item $\displaystyle \lim_{x\to 5} \frac{x^3 - 125}{x - 5}$\\[1ex]\smallgraph
 \end{multicols}
+
 
 \end{questions}
 

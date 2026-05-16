@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{multicol}
 \pgfplotsset{compat=1.18}
 
 \pagestyle{fancy}
@@ -13,7 +14,6 @@
 \fancyfoot[C]{\thepage}
 
 \newcommand{\emptygraph}{
-    \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
             axis lines = middle,
@@ -31,7 +31,6 @@
         ]
         \end{axis}
     \end{tikzpicture}
-    \end{center}
 }
 
 \newcommand{\smallgraph}{
