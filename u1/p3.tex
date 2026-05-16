@@ -4,4 +4,157 @@
 
 \begin{document}
 
+\noindent Graph the function and state the domain and range.
+
+\begin{enumerate}
+
+\begin{multicols}{2}
+    \item $\displaystyle y = e^x + 3$\\[1ex]\smallgraph
+    \item $\displaystyle y = -2^{-x} - 1$\\[1ex]\smallgraph
+\end{multicols}
+
+\vspace{1ex}
+
+\noindent Rewrite the exponential expression to have the indicated base.
+
+\begin{multicols}{3}
+    \item $\displaystyle 16^{3x}$, base 2\\[4ex]
+    \item $\displaystyle \left(\dfrac{1}{8}\right)^{2x}$, base 2\\[4ex]
+    \item $\displaystyle \left(\dfrac{1}{27}\right)^{x}$, base 3\\[4ex]
+\end{multicols}
+
+\noindent Find the zeros of the function algebraically and graphically with a calculator.
+
+\begin{multicols}{2}
+    \item $\displaystyle f(x) = e^x - 4$\\[4ex]
+    \item $\displaystyle f(x) = 3 - 2^x$\\[4ex]
+\end{multicols}
+
+\vspace{1ex}
+\noindent\rule{\textwidth}{0.8pt}
+
+\noindent\textbf{Match the function with its graph (A--E).} Write the graph letter on the blank.
+
+\vspace{1ex}
+
+\begin{multicols}{5}
+    \item $\displaystyle y = 2^x$\\[1ex]
+    Graph: \underline{\hspace{1.8cm}}
+
+    \item $\displaystyle y = 3^{-x}$\\[1ex]
+    Graph: \underline{\hspace{1.8cm}}
+
+    \item $\displaystyle y = -3^{-x}$\\[1ex]
+    Graph: \underline{\hspace{1.8cm}}
+
+    \item $\displaystyle y = -0.5^{-x}$\\[1ex]
+    Graph: \underline{\hspace{1.8cm}}
+
+    \item $\displaystyle y = 2^{-x} - 2$\\[1ex]
+    Graph: \underline{\hspace{1.8cm}}
+\end{multicols}
+
+\vspace{2ex}
+
+\begin{center}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{ccccc}
+    \fbox{\begin{tikzpicture}
+    \begin{axis}[width=3cm, height=2.8cm, axis lines=middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        xtick=\empty, ytick=\empty]
+        \addplot[thick, domain=-3:2, samples=60]{3^(-x)};
+    \end{axis}
+    \end{tikzpicture}}
+    &
+    \fbox{\begin{tikzpicture}
+    \begin{axis}[width=3cm, height=2.8cm, axis lines=middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        xtick=\empty, ytick=\empty]
+        \addplot[thick, domain=-3:3, samples=60]{-3^(-x)};
+    \end{axis}
+    \end{tikzpicture}}
+    &
+    \fbox{\begin{tikzpicture}
+    \begin{axis}[width=3cm, height=2.8cm, axis lines=middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        xtick=\empty, ytick=\empty]
+        \addplot[thick, domain=-2:3, samples=60]{2^(-x)-2};
+    \end{axis}
+    \end{tikzpicture}}
+    &
+    \fbox{\begin{tikzpicture}
+    \begin{axis}[width=3cm, height=2.8cm, axis lines=middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        xtick=\empty, ytick=\empty]
+        \addplot[thick, domain=-2:2, samples=60]{2^x};
+    \end{axis}
+    \end{tikzpicture}}
+    &
+    \fbox{\begin{tikzpicture}
+    \begin{axis}[width=3cm, height=2.8cm, axis lines=middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        xtick=\empty, ytick=\empty]
+        \addplot[thick, domain=-3:2, samples=60]{-(2^x)};
+    \end{axis}
+    \end{tikzpicture}}
+    \\[1ex]
+    \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E}
+\end{tabular}
+\end{center}
+
+\vspace{1ex}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{1ex}
+
+\newpage
+
+\item The table below gives the population for Nevada.
+
+\vspace{1ex}
+{\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|c|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Population of Nevada}} \\ \hline
+    \textbf{Year} & \textbf{Population (thousands)} \\ \hline
+    2002 & 2168 \\ \hline
+    2003 & 2238 \\ \hline
+    2004 & 2330 \\ \hline
+    2005 & 2409 \\ \hline
+\end{tabular}}
+
+\vspace{1ex}
+
+\begin{enumerate}[(a)]
+    \item Compute the ratio of the population in each year to the population in the previous year.\\[3ex]
+    \item Based on part (a), create an exponential model for the population of Nevada.\\[3ex]
+    \item Use your model from part (b) to predict the population of Nevada today. Check your model with a calculator and compare against the current population of Nevada.
+\end{enumerate}
+
+\vspace{3cm}
+
+\item The population of Knoxville is 500{,}000 and is increasing at 3.75\% each year. Approximately when will the population reach 1 million?
+
+\vspace{4cm}
+
+\item If John invests \$2300 in a savings account with a 6\% interest rate compounded annually, how long will it take until John's account has a balance of \$4150?
+
+\vspace{4cm}
+
+\item The half-life of phosphorus-32 is about 14 days. There are 6.6 grams initially. Express the amount of phosphorus-32 remaining as a function of time $t$. When will there be 1 gram remaining?
+
+\vspace{4cm}
+
+\item Determine how much time is required for an investment to triple in value if interest is earned at the rate of 5.75\% compounded daily.
+
+\vspace{4cm}
+
+\item Suppose that in any given year, the number of cases of a disease is reduced by 20\%. If there are 10{,}000 cases today, how many years will it take to reduce the number of cases to 1000? How many years will it take to reduce the number of cases to less than 1?
+
+\vspace{4cm}
+
+\item The number of bacteria in a petri dish culture after $t$ hours is $B = 100e^{0.693t}$. What was the initial number of bacteria present? How many bacteria are present after 6 hours? Approximately when will the number of bacteria be 200?
+
+\end{enumerate}
+
 \end{document}
